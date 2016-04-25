@@ -14,20 +14,65 @@
 //= require jquery_ujs
 //= require_tree .
 
+var nameLink = document.getElementById('name_link');
+nameLink.addEventListener("click", function () {
+  var name_field = document.getElementById('name_field');
+  name_field.value = "Backflip";
+});
+
+var trueRadioBtn = document.getElementById('show_true')
+trueRadioBtn.addEventListener("click", function () {
+  var section = document.getElementById('show_hide_section');
+  section.style = "display: block";
+});
+
+var copyLink = document.getElementById('copy_link')
+
+copyLink.addEventListener("click", function () {
+  var copySection = document.getElementById('copy_section');
+  
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //alert("I HAVE YOU NOW!");
-
-function defaultName() {
-  var nameField = document.getElementById("name_field");
-  nameField.value = "Emperor Goatimus";
-}
-
-function displaySection(displayType) {
-  var section = document.getElementById("show_hide_section");
-  section.style.display = displayType;
-}
-
-function copySection() {
-  var section = document.getElementById("copy_section");
-  var copy = section.lastElementChild.cloneNode(true);
-  section.appendChild(copy);
-}
+//
+// function defaultName() {
+//   var nameField = document.getElementById("name_field");
+//   nameField.value = "Emperor Goatimus";
+// }
+//
+// function displaySection(displayType) {
+//   var section = document.getElementById("show_hide_section");
+//   section.style.display = displayType;
+// }
+//
+// function copySection() {
+//   var section = document.getElementById("copy_section");
+//   var copy = section.lastElementChild.cloneNode(true);
+//   section.appendChild(copy);
+// }
